@@ -1,1 +1,2 @@
 Api: https://www.weatherapi.com/my/
+Svg cargando datos: https://samherbert.net/svg-loaders/

@@ -16,7 +16,7 @@ function Form({ changeLocation }) {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" onChange={setLocationChange} />
+      <input placeholder="¿Lugar?" type="text" onChange={setLocationChange} />
     </form>
   );
 }

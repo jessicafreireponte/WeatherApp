@@ -1,4 +1,4 @@
-#root {
+/* #root {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -31,4 +31,70 @@ input {
   box-shadow: -3px -3px 1px #99afab;
   text-align: center;
   padding: 0.3rem 0;
+}
+
+/* .frio {
+  background-color: rgba(0, 145, 156);
+}
+
+
+.calor {
+  background-color: rgb(255, 220, 192);
+}
+
+p {
+  font-size: large;
+} */
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url("clouds-g283aea3d8_1280.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: rgba(0, 145, 156, 0.7);
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 8px 8px 1px #99afab;
+}
+
+img {
+  height: 15vh;
+}
+
+input {
+  background-color: #f1f2ef;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -3px -3px 1px #99afab;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+.calor {
+  background-image: url("paisaje-dia-soleado_10250-1339.jpg");
+}
+
+.frio {
+  background-image: url("ilustracion-vectorial-tarjeta-navidad-dia-frio-soleado-montanas_217290-45.avif");
+}
+
+p {
+  font-size: large;
 }

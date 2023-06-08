@@ -26,14 +26,21 @@ function Weather() {
     setWeather(null);
     loadingInfo(city);
   }
+
   return (
-    <section>
-      <Form changeLocation={handleChangeLocation} />
-      {/* Ahora voy a utilizar un ternario en el cuál,
+    <main
+      className={`${weather?.current?.temp_c <= 20 && "frio"} ${
+        weather?.current?.temp_c > 20 && "calor"
+      }`}
+    >
+      <section>
+        <Form changeLocation={handleChangeLocation} />
+        {/* Ahora voy a utilizar un ternario en el cuál,
       si no obtengo la información del tiempo, que 
       esté cargando */}
-      {weather ? <WeatherInfo weather={weather} /> : <Loading />}
-    </section>
+        {weather ? <WeatherInfo weather={weather} /> : <Loading />}
+      </section>
+    </main>
   );
 }
 export default Weather;
